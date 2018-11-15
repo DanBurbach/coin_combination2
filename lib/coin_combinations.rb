@@ -19,8 +19,8 @@ class Float
         if nickels_remainder != 0
           pennies = nickels_remainder / 1
           pennies_remainder = pennies % 1
-          pennies_string = pennies.to_i.to_s + " pennies "
-          final_sentence = quarters_string.concat(dimes_string)
+          pennies_string = pennies.to_i.to_s + " pennies"
+          final_string.concat(pennies_string)
         else
           return final_string
         end

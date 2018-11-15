@@ -13,4 +13,7 @@ describe '#make_change' do
   it("tells us how many quarters, dimes and nickels there are") do
     expect(1.15.make_quarters).to eql("4 quarters 1 dimes 1 nickels ")
   end
+  it("tells us how many quarters, dimes and nickels there are") do
+    expect(1.18.make_quarters).to eql("4 quarters 1 dimes 1 nickels 3 pennies")
+  end
 end
